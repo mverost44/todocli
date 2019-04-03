@@ -29,26 +29,29 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`todocli hello`](#todocli-hello)
+* [`todocli add`](#todocli-add)
 * [`todocli help [COMMAND]`](#todocli-help-command)
+* [`todocli remove`](#todocli-remove)
+* [`todocli show`](#todocli-show)
+* [`todocli update`](#todocli-update)
 
-## `todocli hello`
+## `todocli add`
 
-Describe the command here
+Adds a new Todo
 
 ```
 USAGE
-  $ todocli hello
+  $ todocli add
 
 OPTIONS
-  -n, --name=name  name to print
+  -n, --task=task  task
 
 DESCRIPTION
   ...
-  Extra documentation goes here
+  Adds a new todo to the existing list
 ```
 
-_See code: [src/commands/hello.js](https://github.com/mverost44/todocli/blob/v0.0.0/src/commands/hello.js)_
+_See code: [src/commands/add.js](https://github.com/mverost44/todocli/blob/v0.0.0/src/commands/add.js)_
 
 ## `todocli help [COMMAND]`
 
@@ -66,4 +69,55 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
+
+## `todocli remove`
+
+Removes a task by id
+
+```
+USAGE
+  $ todocli remove
+
+OPTIONS
+  -n, --id=id  (required) task id
+
+DESCRIPTION
+  ...
+  Removes a task permanently from database by id
+```
+
+_See code: [src/commands/remove.js](https://github.com/mverost44/todocli/blob/v0.0.0/src/commands/remove.js)_
+
+## `todocli show`
+
+Shows existing tasks
+
+```
+USAGE
+  $ todocli show
+
+DESCRIPTION
+  ...
+  Shows all the tasks sorted by their ids
+```
+
+_See code: [src/commands/show.js](https://github.com/mverost44/todocli/blob/v0.0.0/src/commands/show.js)_
+
+## `todocli update`
+
+Marks a task as done
+
+```
+USAGE
+  $ todocli update
+
+OPTIONS
+  -n, --id=id  task id
+
+DESCRIPTION
+  ...
+  Marks a task as done
+```
+
+_See code: [src/commands/update.js](https://github.com/mverost44/todocli/blob/v0.0.0/src/commands/update.js)_
 <!-- commandsstop -->
