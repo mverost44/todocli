@@ -16,31 +16,31 @@ Todo List
 <!-- usage -->
 ```sh-session
 $ npm install -g todo-mv
-$ todo COMMAND
+$ todocli COMMAND
 running command...
-$ todo (-v|--version|version)
-todo-mv/1.0.2 linux-x64 node-v10.15.0
-$ todo --help [COMMAND]
+$ todocli (-v|--version|version)
+todo-mv/1.0.3 linux-x64 node-v10.15.0
+$ todocli --help [COMMAND]
 USAGE
-  $ todo COMMAND
+  $ todocli COMMAND
 ...
 ```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`todo add`](#todo-add)
-* [`todo help [COMMAND]`](#todo-help-command)
-* [`todo remove`](#todo-remove)
-* [`todo show`](#todo-show)
-* [`todo update`](#todo-update)
+* [`todocli add`](#todocli-add)
+* [`todocli help [COMMAND]`](#todocli-help-command)
+* [`todocli remove`](#todocli-remove)
+* [`todocli show`](#todocli-show)
+* [`todocli update`](#todocli-update)
 
-## `todo add`
+## `todocli add`
 
 Adds a new Todo
 
 ```
 USAGE
-  $ todo add
+  $ todocli add
 
 OPTIONS
   -n, --task=task  task
@@ -50,15 +50,15 @@ DESCRIPTION
   Adds a new todo to the existing list
 ```
 
-_See code: [src/commands/add.js](https://github.com/mverost44/todocli/blob/v1.0.2/src/commands/add.js)_
+_See code: [src/commands/add.js](https://github.com/mverost44/todocli/blob/v1.0.3/src/commands/add.js)_
 
-## `todo help [COMMAND]`
+## `todocli help [COMMAND]`
 
-display help for todo
+display help for todocli
 
 ```
 USAGE
-  $ todo help [COMMAND]
+  $ todocli help [COMMAND]
 
 ARGUMENTS
   COMMAND  command to show help for
@@ -69,13 +69,13 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
 
-## `todo remove`
+## `todocli remove`
 
 Removes a task by id
 
 ```
 USAGE
-  $ todo remove
+  $ todocli remove
 
 OPTIONS
   -n, --id=id  (required) task id
@@ -85,30 +85,30 @@ DESCRIPTION
   Removes a task permanently from database by id
 ```
 
-_See code: [src/commands/remove.js](https://github.com/mverost44/todocli/blob/v1.0.2/src/commands/remove.js)_
+_See code: [src/commands/remove.js](https://github.com/mverost44/todocli/blob/v1.0.3/src/commands/remove.js)_
 
-## `todo show`
+## `todocli show`
 
 Shows existing tasks
 
 ```
 USAGE
-  $ todo show
+  $ todocli show
 
 DESCRIPTION
   ...
   Shows all the tasks sorted by their ids
 ```
 
-_See code: [src/commands/show.js](https://github.com/mverost44/todocli/blob/v1.0.2/src/commands/show.js)_
+_See code: [src/commands/show.js](https://github.com/mverost44/todocli/blob/v1.0.3/src/commands/show.js)_
 
-## `todo update`
+## `todocli update`
 
 Marks a task as done
 
 ```
 USAGE
-  $ todo update
+  $ todocli update
 
 OPTIONS
   -n, --id=id  task id
@@ -118,5 +118,5 @@ DESCRIPTION
   Marks a task as done
 ```
 
-_See code: [src/commands/update.js](https://github.com/mverost44/todocli/blob/v1.0.2/src/commands/update.js)_
+_See code: [src/commands/update.js](https://github.com/mverost44/todocli/blob/v1.0.3/src/commands/update.js)_
 <!-- commandsstop -->
