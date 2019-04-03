@@ -5,8 +5,8 @@ Todo List
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/todo-mv.svg)](https://npmjs.org/package/todo)
-[![CircleCI](https://circleci.com/gh/mverost44/todocli/tree/master.svg?style=shield)](https://circleci.com/gh/mverost44/todocli/tree/master)
-[![Downloads/week](https://img.shields.io/npm/dw/todo.svg)](https://npmjs.org/package/todo)
+[![CircleCI](https://circleci.com/gh/mverost44/todo/tree/master.svg?style=shield)](https://circleci.com/gh/mverost44/todocli/tree/master)
+[![Downloads/week](https://img.shields.io/npm/dw/todocli.svg)](https://npmjs.org/package/todo)
 
 <!-- toc -->
 * [Usage](#usage)
@@ -16,31 +16,31 @@ Todo List
 <!-- usage -->
 ```sh-session
 $ npm install -g todo-mv
-$ todocli COMMAND
+$ todo COMMAND
 running command...
-$ todocli (-v|--version|version)
+$ todo (-v|--version|version)
 todo-mv/1.0.3 linux-x64 node-v10.15.0
-$ todocli --help [COMMAND]
+$ todo --help [COMMAND]
 USAGE
-  $ todocli COMMAND
+  $ todo COMMAND
 ...
 ```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`todocli add`](#todocli-add)
-* [`todocli help [COMMAND]`](#todocli-help-command)
-* [`todocli remove`](#todocli-remove)
-* [`todocli show`](#todocli-show)
-* [`todocli update`](#todocli-update)
+* [`todo add`](#todo-add)
+* [`todo help [COMMAND]`](#todo-help-command)
+* [`todo remove`](#todo-remove)
+* [`todo show`](#todo-show)
+* [`todo update`](#todo-update)
 
-## `todocli add`
+## `todo add`
 
 Adds a new Todo
 
 ```
 USAGE
-  $ todocli add
+  $ todo add
 
 OPTIONS
   -n, --task=task  task
@@ -52,13 +52,13 @@ DESCRIPTION
 
 _See code: [src/commands/add.js](https://github.com/mverost44/todocli/blob/v1.0.3/src/commands/add.js)_
 
-## `todocli help [COMMAND]`
+## `todo help [COMMAND]`
 
-display help for todocli
+display help for todo
 
 ```
 USAGE
-  $ todocli help [COMMAND]
+  $ todo help [COMMAND]
 
 ARGUMENTS
   COMMAND  command to show help for
@@ -69,13 +69,13 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.6/src/commands/help.ts)_
 
-## `todocli remove`
+## `todo remove`
 
 Removes a task by id
 
 ```
 USAGE
-  $ todocli remove
+  $ todo remove
 
 OPTIONS
   -n, --id=id  (required) task id
@@ -87,13 +87,13 @@ DESCRIPTION
 
 _See code: [src/commands/remove.js](https://github.com/mverost44/todocli/blob/v1.0.3/src/commands/remove.js)_
 
-## `todocli show`
+## `todo show`
 
 Shows existing tasks
 
 ```
 USAGE
-  $ todocli show
+  $ todo show
 
 DESCRIPTION
   ...
@@ -102,13 +102,13 @@ DESCRIPTION
 
 _See code: [src/commands/show.js](https://github.com/mverost44/todocli/blob/v1.0.3/src/commands/show.js)_
 
-## `todocli update`
+## `todo update`
 
 Marks a task as done
 
 ```
 USAGE
-  $ todocli update
+  $ todo update
 
 OPTIONS
   -n, --id=id  task id
