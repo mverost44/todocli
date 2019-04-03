@@ -1,7 +1,7 @@
 {
   "name": "todo-mv",
   "description": "Todo List",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "mverost @mverost44",
   "bin": {
     "todo": "./bin/run"

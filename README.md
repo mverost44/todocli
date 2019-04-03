@@ -19,7 +19,7 @@ $ npm install -g todo-mv
 $ todo COMMAND
 running command...
 $ todo (-v|--version|version)
-todo-mv/1.0.1 linux-x64 node-v10.15.0
+todo-mv/1.0.2 linux-x64 node-v10.15.0
 $ todo --help [COMMAND]
 USAGE
   $ todo COMMAND
@@ -50,7 +50,7 @@ DESCRIPTION
   Adds a new todo to the existing list
 ```
 
-_See code: [src/commands/add.js](https://github.com/mverost44/todo/blob/v1.0.1/src/commands/add.js)_
+_See code: [src/commands/add.js](https://github.com/mverost44/todocli/blob/v1.0.2/src/commands/add.js)_
 
 ## `todo help [COMMAND]`
 
@@ -85,7 +85,7 @@ DESCRIPTION
   Removes a task permanently from database by id
 ```
 
-_See code: [src/commands/remove.js](https://github.com/mverost44/todo/blob/v1.0.1/src/commands/remove.js)_
+_See code: [src/commands/remove.js](https://github.com/mverost44/todocli/blob/v1.0.2/src/commands/remove.js)_
 
 ## `todo show`
 
@@ -100,7 +100,7 @@ DESCRIPTION
   Shows all the tasks sorted by their ids
 ```
 
-_See code: [src/commands/show.js](https://github.com/mverost44/todo/blob/v1.0.1/src/commands/show.js)_
+_See code: [src/commands/show.js](https://github.com/mverost44/todocli/blob/v1.0.2/src/commands/show.js)_
 
 ## `todo update`
 
@@ -118,5 +118,5 @@ DESCRIPTION
   Marks a task as done
 ```
 
-_See code: [src/commands/update.js](https://github.com/mverost44/todo/blob/v1.0.1/src/commands/update.js)_
+_See code: [src/commands/update.js](https://github.com/mverost44/todocli/blob/v1.0.2/src/commands/update.js)_
 <!-- commandsstop -->
